@@ -1,7 +1,7 @@
 package com.example.restapi.model;
 
 public class Greeting {
-    private final long id;
+	private final long id;
 	private String content;
 
 	public Greeting() {

@@ -1,11 +1,10 @@
 # All Greetings:
 GET http://localhost:8080/api/greeting HTTP/1.1
 
-# Get Gretting id 1:
+### Get Gretting id 1:
 GET http://localhost:8080/api/greeting/1 HTTP/1.1
 
-
-# Create Gretting:
+### Create Gretting:
 POST http://localhost:8080/api/greeting HTTP/1.1
 content-type: application/json
 
@@ -13,8 +12,7 @@ content-type: application/json
     "content": "New Name"
 }
 
-
-# Update Gretting id 1:
+### Update Gretting id 1:
 PUT http://localhost:8080/api/greeting HTTP/1.1
 content-type: application/json
 
@@ -23,27 +21,25 @@ content-type: application/json
     "content": "Updated Name"
 }
 
-# Delete Gretting:
+### Delete Gretting:
 DELETE http://localhost:8080/api/greeting/2 HTTP/1.1
 
-
-# Error messsage:
+### Error messsage:
 GET http://localhost:8080/api/greeting-error HTTP/1.1
 
-# Filter:
+### Filter:
 GET http://localhost:8080/api/greeting/filter/q?content=Upd HTTP/1.1
 
 
 
 
-# All Books:
+### All Books:
 GET http://localhost:8080/api/book HTTP/1.1
 
-# Get first Book:
+### Get first Book:
 GET http://localhost:8080/api/book/1 HTTP/1.1
 
-
-# Create Book:
+### Create Book:
 POST http://localhost:8080/api/book HTTP/1.1
 content-type: application/json
 

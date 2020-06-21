@@ -3,7 +3,6 @@ package com.example.restapi.controller;
 import com.example.restapi.exception.GreetingNotFoundException;
 import com.example.restapi.model.ErrorMessage;
 
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
