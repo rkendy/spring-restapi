@@ -1,6 +1,7 @@
 package com.example.restapi.model;
 
 public class Book {
+    private Long id;
     private String title;
     private String author;
 
@@ -8,9 +9,14 @@ public class Book {
 
     }
 
-    public Book(String title, String author) {
+    public Book(Long id, String title, String author) {
+        this.id = id;
         this.title = title;
         this.author = author;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public String getTitle() {

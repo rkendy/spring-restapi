@@ -47,3 +47,6 @@ content-type: application/json
     "title": "New Title",
     "author": "New Author"
 }
+
+### Delete Book:
+DELETE http://localhost:8080/api/book/2 HTTP/1.1
