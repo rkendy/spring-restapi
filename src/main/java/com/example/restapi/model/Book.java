@@ -1,5 +1,7 @@
 package com.example.restapi.model;
 
+import java.util.Objects;
+
 public class Book {
     private Long id;
     private String title;
@@ -25,6 +27,27 @@ public class Book {
 
     public String getAuthor() {
         return author;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+
+        Book book = (Book) obj;
+        return this.id == book.id && Objects.equals(title, book.title) && Objects.equals(author, book.author);
     }
 
 }

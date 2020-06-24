@@ -1,6 +1,5 @@
-package com.example.restapi.controller;
+package com.example.restapi.exception;
 
-import com.example.restapi.exception.GreetingNotFoundException;
 import com.example.restapi.model.ErrorMessage;
 
 import org.springframework.http.HttpStatus;

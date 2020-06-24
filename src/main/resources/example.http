@@ -44,9 +44,25 @@ POST http://localhost:8080/api/book HTTP/1.1
 content-type: application/json
 
 {    
-    "title": "New Title",
-    "author": "New Author"
+    "title": "Title",
+    "author": "Author"
 }
 
 ### Delete Book:
 DELETE http://localhost:8080/api/book/2 HTTP/1.1
+
+### Update Book:
+PUT http://localhost:8080/api/book/1 HTTP/1.1
+content-type: application/json
+
+{    
+    "title": "New Title X"    
+}
+
+### Patch Book:
+PATCH http://localhost:8080/api/book/1 HTTP/1.1
+content-type: application/json
+
+{    
+    "title": "New Title XXX"    
+}
