@@ -2,16 +2,19 @@
 
 Spring Rest API
 
+## Run
 java -jar build\libs\restapi-0.0.1-SNAPSHOT.jar
 
-GreetingController: HATEOAS (GreetingModelAssembler)
+## Controller
+- GreetingController: HATEOAS (GreetingModelAssembler)
+- BookController: return ResponseEntity<Book>
 
-BookController: return ResponseEntity<Book>
+## Exception
+- Exception Http code (404, 409 etc): exception/\*Advice.java
 
-Exception Http code (404, 409 etc): exception/\*Advice.java
+## Test
 Test with Mock: need to add Advice with setControllerAdvice
 
-OpenAPI:
-localhost:8080/api-docs
-Swagger:
-localhost:8080/swagger-ui.html
+## Links
+- OpenAPI: localhost:8080/api-docs
+- Swagger: localhost:8080/swagger-ui.html
