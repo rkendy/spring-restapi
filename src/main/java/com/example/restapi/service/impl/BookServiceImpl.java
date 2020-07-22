@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Optional;
 
 import com.example.restapi.exception.BookException;
+import com.example.restapi.exception.SimpleException;
 import com.example.restapi.model.Book;
 import com.example.restapi.service.BookService;
 
@@ -25,7 +26,8 @@ public class BookServiceImpl implements BookService {
         return books.stream() //
                 .filter(e -> e.getId() == id) //
                 .findFirst() //
-                .orElseThrow(() -> new BookException(id));
+                .orElseThrow(() -> new SimpleException());
+        // new BookException(id)
     }
 
     @Override
