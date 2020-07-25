@@ -26,7 +26,7 @@ public class BookServiceImpl implements BookService {
         return books.stream() //
                 .filter(e -> e.getId() == id) //
                 .findFirst() //
-                .orElseThrow(() -> new SimpleException());
+                .orElseThrow(() -> new SimpleException("Simple Error: book id " + id + " not found!"));
         // new BookException(id)
     }
 
